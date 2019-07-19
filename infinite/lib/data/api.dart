@@ -10,7 +10,7 @@ class MovieRepository {
             currentPage.toString();
     final response = await http.get(url);
     if (response.statusCode == 200) {
-      print('Request Time');
+      print('Get Data');
       return Playing.fromJson(json.decode(response.body));
     } else {
       throw Exception('Faild to load');

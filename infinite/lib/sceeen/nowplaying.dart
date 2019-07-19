@@ -36,16 +36,18 @@ class _NowPlayingState extends State<NowPlaying> {
                 child: CircularProgressIndicator(),
               );
             } else
-              return new MovieList(movies: s.data);
+              return new MovieList(
+                playing: s.data,
+              );
           },
         ));
   }
 }
 
 class MovieList extends StatefulWidget {
-  final Playing movies;
+  final Playing playing;
   const MovieList({
-    this.movies,
+    this.playing,
     Key key,
   }) : super(key: key);
 
@@ -54,11 +56,11 @@ class MovieList extends StatefulWidget {
 }
 
 class _MovieListState extends State<MovieList> {
-  final ScrollController scrollController = new ScrollController();
+  ScrollController scrollController = new ScrollController();
   List<Result> movie;
   int currentPage = 1;
 
-  bool onNotification(ScrollNotification notification) {
+  bool onNotificatin(ScrollNotification notification) {
     if (notification is ScrollUpdateNotification) {
       if (scrollController.position.maxScrollExtent > scrollController.offset &&
           scrollController.position.maxScrollExtent - scrollController.offset <=
@@ -77,7 +79,7 @@ class _MovieListState extends State<MovieList> {
 
   @override
   void initState() {
-    movie = widget.movies.results;
+    movie = widget.playing.results;
     super.initState();
   }
 
@@ -89,7 +91,7 @@ class _MovieListState extends State<MovieList> {
   @override
   Widget build(BuildContext context) {
     return NotificationListener(
-      onNotification: onNotification,
+      onNotification: onNotificatin,
       child: ListView.builder(
           itemCount: movie.length,
           controller: scrollController,
@@ -101,10 +103,8 @@ class _MovieListState extends State<MovieList> {
               decoration: BoxDecoration(
                   color: Colors.orange,
                   image: DecorationImage(
-                      image: (movie[i].posterPath == null)
-                          ? AssetImage('images/bg.png')
-                          : NetworkImage('https://image.tmdb.org/t/p/w500' +
-                              movie[i].posterPath),
+                      image: NetworkImage('https://image.tmdb.org/t/p/w500' +
+                          movie[i].posterPath),
                       fit: BoxFit.cover,
                       alignment: Alignment.topCenter),
                   borderRadius: BorderRadius.circular(15.0)),
