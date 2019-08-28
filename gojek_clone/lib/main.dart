@@ -52,33 +52,53 @@ class _MyHomePageState extends State<MyHomePage> {
           },
           items: [
             BottomNavigationBarItem(
-                icon: Padding(
+                activeIcon: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: Image.asset('images/home.png', scale: 2.5),
                 ),
+                icon: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Image.asset('images/home-non.png', scale: 2.5),
+                ),
                 title: Text('Home')),
             BottomNavigationBarItem(
-                icon: Padding(
+                activeIcon: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: Image.asset('images/orders.png', scale: 2.5),
                 ),
+                icon: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Image.asset('images/orders-non.png', scale: 2.5),
+                ),
                 title: Text('Orders')),
             BottomNavigationBarItem(
-                icon: Padding(
+                activeIcon: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: Image.asset('images/chat.png', scale: 2.5),
                 ),
+                icon: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Image.asset('images/chat-non.png', scale: 2.5),
+                ),
                 title: Text('Chat')),
             BottomNavigationBarItem(
-                icon: Padding(
+                activeIcon: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: Image.asset('images/inbox.png', scale: 2.5),
                 ),
-                title: Text('Inbox')),
-            BottomNavigationBarItem(
                 icon: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Image.asset('images/inbox-non.png', scale: 2.5),
+                ),
+                title: Text('Inbox')),
+            BottomNavigationBarItem(
+                activeIcon: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: Image.asset('images/account.png', scale: 2.5),
+                ),
+                icon: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: Image.asset('images/account-non.png', scale: 2.5),
                 ),
                 title: Text('Account'))
           ]),

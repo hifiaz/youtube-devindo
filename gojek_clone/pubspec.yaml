@@ -59,7 +59,11 @@ flutter:
   fonts:
     - family: MaisonNeue
       fonts:
-        - asset: fonts/maisonneuebold.ttf
+        - asset: fonts/maison-neue-bold-italic.woff
+        - asset: fonts/maison-neue-bold.woff
+        - asset: fonts/maison-neue-book.woff
+        - asset: fonts/maison-neue-light-italic.woff
+        - asset: fonts/maison-neue-light.woff
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
