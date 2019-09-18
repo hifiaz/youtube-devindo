@@ -1,3 +1,4 @@
+import 'package:exploreprovider/data/theme.dart';
 import 'package:exploreprovider/data/uiset.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -26,20 +27,13 @@ class _SettingsState extends State<Settings> {
                 ui.fontSize = newValue;
               },
             ),
+          ),
+          RaisedButton(
+            child: Text('Change Theme'),
+            onPressed: () => Provider.of<ThemeNotifier>(context).switchTheme() ,
           )
         ],
       ),
     );
   }
 }
-
-// ListTile(
-// contentPadding: EdgeInsets.only(top: 10, right: 30, left: 15),
-// itle: Text('Font Size'),
-// subtitle: Slider(
-// min: 0.5,
-// value: ui.sliderFontSize,
-//  onChanged: (newValue) => ui.fontSize = newValue,
-// ),
-// trailing: Text('${ui.fontSize.toInt()}'),
-// ),
