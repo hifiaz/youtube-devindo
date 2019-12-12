@@ -1,5 +1,6 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:grab/widget/button.dart';
 
 class LoginPage extends StatefulWidget {
@@ -32,13 +33,13 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(
-                    'Selamat datang!',
-                    style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white),
-                  ),
+                  Text('Selamat datang!',
+                      style: GoogleFonts.inconsolata(
+                        textStyle: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      )),
                   SizedBox(height: 5),
                   Text(
                     'Masukkan nomor ponselmu.',
