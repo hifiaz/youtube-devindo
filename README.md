@@ -11,3 +11,4 @@
 - Multi Language Localization [link](https://github.com/hifiaz/youtube-devindo/tree/multilang) Youtube [link](https://youtu.be/bNu8LpiyOYk)
 - Splash Screen [link](https://github.com/hifiaz/youtube-devindo/tree/splasscreen) Youtube [link](https://youtu.be/bDrPf3TDz5A)
 - Infinite Scroll MovieDB [link](https://github.com/hifiaz/youtube-devindo/tree/infinite) Youtube [link](https://youtu.be/IT3X8Mkg6eE)
+- Dasar MobX [link](https://github.com/hifiaz/youtube-devindo/tree/startmobx) Youtube [link](https://youtu.be/LQeo4t9_EUs)
