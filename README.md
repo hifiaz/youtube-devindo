@@ -16,4 +16,4 @@
 - Flutter Speak [link](https://github.com/hifiaz/youtube-devindo/tree/flutter_speak)
 - Camera Overlay [link](https://github.com/hifiaz/youtube-devindo/tree/camera_overlay) Youtube[link](https://youtu.be/xJm_taASXjc)
 - Screenshot and Share [link](https://github.com/hifiaz/youtube-devindo/tree/screnshotandshare) Youtube[link](https://youtu.be/YzMDT_48uS4)
-- Screenshot and Share [link](https://github.com/hifiaz/youtube-devindo/tree/easy_translation) Youtube[link](https://youtu.be/nKG_oAtgXq8)
+- Flutter Easy Localization Ubah Bahasa [link](https://github.com/hifiaz/youtube-devindo/tree/easy_translation) Youtube[link](https://youtu.be/nKG_oAtgXq8)
